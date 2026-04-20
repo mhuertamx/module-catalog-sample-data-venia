@@ -77,7 +77,7 @@ class Converter extends \Magento\CatalogSampleDataVenia\Setup\Product\Converter
             Filesystem::class
         );
 
-        $this->driverInterface = $driverInterface ?: ObjectManager::getInstance()->get(\Magento\Framework\Filesystem\DriverInterface::class);
+        $this->driverInterface = $driverInterface ?: ObjectManager::getInstance()->get(\Magento\Framework\Filesystem\Driver\File::class);
     }
 
 
