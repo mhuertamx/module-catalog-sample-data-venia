@@ -16,6 +16,7 @@ use Magento\Catalog\Api\Data\ProductInterface;
  */
 class Gallery
 {
+    protected $galleryResource;
     /**
      * @var \Magento\Framework\Setup\SampleData\FixtureManager
      */
