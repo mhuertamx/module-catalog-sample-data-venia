@@ -34,7 +34,7 @@ class InstallBundledProducts implements DataPatchInterface
      */
     public function __construct(
         BundleProduct $bundleProduct,
-        StoreManagerInterface $storeManager = null
+        ?StoreManagerInterface $storeManager = null
     ) {
         $this->bundleProduct = $bundleProduct;
         $this->storeManager = $storeManager ?: \Magento\Framework\App\ObjectManager::getInstance()
