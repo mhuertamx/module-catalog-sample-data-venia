@@ -35,7 +35,7 @@ class InstallGroupedProducts implements DataPatchInterface
      */
     public function __construct(
         GroupProduct $groupedProduct,
-        StoreManagerInterface $storeManager = null
+        ?StoreManagerInterface $storeManager = null
     ) {
         $this->groupedProduct = $groupedProduct;
         $this->storeManager = $storeManager ?: \Magento\Framework\App\ObjectManager::getInstance()
