@@ -57,9 +57,9 @@ class Converter extends \Magento\CatalogSampleDataVenia\Setup\Product\Converter
         AttributeCollectionFactory $attributeCollectionFactory,
         OptionCollectionFactory $attrOptionCollectionFactory,
         ProductCollectionFactory $productCollectionFactory,
-        ContentInterfaceFactory $fileContentFactory = null,
-        Filesystem $filesystem = null,
-        DriverInterface $driverInterface
+        ?ContentInterfaceFactory $fileContentFactory = null,
+        ?Filesystem $filesystem = null,
+        ?DriverInterface $driverInterface = null
     ) {
         parent::__construct(
             $categoryTreeFactory,
