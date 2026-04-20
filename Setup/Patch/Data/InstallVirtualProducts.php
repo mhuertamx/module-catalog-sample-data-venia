@@ -46,7 +46,7 @@ class InstallVirtualProducts implements DataPatchInterface
      * @param StoreManagerInterface|null $storeManager
      */
     public function __construct(
-                                 Product $productSetup, Category $categorySetup,StoreManagerInterface $storeManager = null)
+                                 Product $productSetup, Category $categorySetup,?StoreManagerInterface $storeManager = null)
     {
         $this->categorySetup = $categorySetup;
         $this->productSetup = $productSetup;
